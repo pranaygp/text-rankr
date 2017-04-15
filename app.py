@@ -1,4 +1,4 @@
-import markdown
+import networkx, numpy, scipy
 from flask import Flask, request, jsonify
 from summa import summarizer
 app = Flask(__name__)
@@ -31,4 +31,4 @@ def index():
 	return jsonify(ret)
 
 if __name__=='__main__':
-	app.run(debug=True)
+	app.run()
